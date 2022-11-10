@@ -155,12 +155,17 @@ update "C:\Users\nikol\not-smns-project\NOT sMNS v1.0.1.2\Globals\Gunits.dbf" se
 update "C:\Users\nikol\not-smns-project\NOT sMNS v1.0.1.2\Globals\Gunits.dbf" set
         enroll_c = 'g0250:r0000:y0000:e0000:w0000',
         move = 32, scout = 6, life_time = 0, negotiate = 13,
-        leadership = 3
+        leadership = 3,
+        atck_twice = 1
     where unit_id = 'g000uu0099'
 
 update "C:\Users\nikol\not-smns-project\NOT sMNS v1.0.1.2\Globals\GDynUpgr.DBF" set
         move = 1
     where upgrade_id = 'g000DU0099'
+
+update "C:\Users\nikol\not-smns-project\NOT sMNS v1.0.1.2\Globals\Gattacks.dbf" set power = 55 where att_id = 'g000aa0099'
+
+update "C:\Users\nikol\not-smns-project\NOT sMNS v1.0.1.2\Globals\Gattacks.dbf" set power = 40 where att_id = 'g000aa8132'
 
 -- Орды_Нежити - Вор (5)
 update "C:\Users\nikol\not-smns-project\NOT sMNS v1.0.1.2\Globals\Gunits.dbf" set
